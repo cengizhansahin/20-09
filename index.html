@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: lightyellow;
+      }
+
+      .container {
+        height: 500px;
+        width: 500px;
+        border: 2px solid black;
+        margin: 50px;
+        position: relative;
+      }
+
+      .static {
+        background-color: lightblue;
+      }
+
+      .relative {
+        position: relative;
+        background-color: lightgreen;
+        top: 20px;
+        left: 20px;
+      }
+
+      .absolute {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        background-color: lightcoral;
+      }
+
+      .fixed {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        background-color: lightyellow;
+      }
+
+      .image-container {
+        position: relative;
+        width: 300px;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .overlay-text {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        background-color: rgba(0, 0, 0, 0.6);
+        font-size: 25px;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Static tüm html elementleri için varsayılan poisyondur. top right bottom left gibi özellikleri etkilememektedir.-->
+      <div class="static">Static</div>
+      <!-- Reltive eğer ki bir öğeyi relative olarak ayarlarsanız normal pozisyonundan (yani static pozisyondan) dışa doğru hareket edebilir. -->
+      <div class="relative">Relative</div>
+      <!-- bu pozisyon tipinde en yakındaki position değeri static olmayan herhangi bir 'ebeveyne' göre konumlanır. Eğer ki static olmayan bir ebeveyni yoksa body'e göre konumlandırılır. Bizim örnekte static olmayan ebeveyn containerdı.-->
+      <div class="absolute">Absolute</div>
+    </div>
+    <!-- Bu da sayfa gövdesinde göre konumlandırılır. Sayfa ne kadar kaydrılırsa kaydırılsın sabit kalacaktır. -->
+    <div class="fixed">Fixed</div>
+    <div class="kutu">Lorem ipsum dolor sit amet consectetur,</div>
+
+    <div class="image-container">
+      <img src="https://picsum.photos/300" alt="" />
+      <div class="overlay-text">Herhangi Bir Yazı</div>
+    </div>
+  </body>
+</html>
