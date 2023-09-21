@@ -2,22 +2,42 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Vag", sans-serif;
 }
 
 ul {
   list-style-type: none;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Andada+Pro&family=Montserrat:wght@500&family=Roboto:ital,wght@0,700;1,500&display=swap");
-
-@font-face {
-  font-family: "h2";
-  src: url(./font/VAGRON.TTF);
+html {
+  line-height: normal;
+  font-weight: normal;
 }
-@import url("https://fonts.cdnfonts.com/css/vag-primer");
 
+/* @font-face {
+  font-family: "";
+  src: url(./font/fontawesome-webfont.woff2);
+} */
+@font-face {
+  font-family: "Vag";
+  src: url(./font/Vag.woff2);
+}
+@font-face {
+  font-family: "VagRoundedBT";
+  src: url(./font/VAGRoundedBT.woff2);
+}
+
+/*header başlangıç*/
 .container-header {
+  overflow: hidden;
+  text-align: center;
+  background-color: #06514d;
+}
+body {
+  color: #000000;
+  font-size: 18px;
+  font-family: "Vag", sans-serif;
+}
+/* .container-header {
   background-color: #06514d;
   border: 2px solid red;
   width: 100%;
@@ -26,12 +46,15 @@ ul {
 }
 
 .container-header li {
+  font-size: 18px;
+  font-family: "Vag", sans-serif;
   color: white;
-}
+} */
+/*header bitiş*/
 
+/*main1 başlangıç*/
 .main1-con {
   background-color: #d98833;
-  /* border: 2px solid red; */
   width: 100%;
   height: 500px;
 }
@@ -44,28 +67,37 @@ ul {
 .main1-left {
   width: 80%;
   color: white;
-  margin: 50px;
+  margin: 40px;
+  padding-left: 40px;
 }
 
 .main1-left h2 {
   font-size: 40px;
-  font-family: "h2", sans-serif;
   font-weight: 400;
   margin-bottom: 30px;
+  font-family: "VAGRoundedBT", sans-serif;
 }
 
 .main1-left p {
   font-size: 20px;
   text-align: justify;
-  font-family: "VAG Primer", sans-serif;
+  padding-right: 75px;
+  font-family: "Vag", sans-serif;
 }
 
+.main1-right {
+  padding-top: 30px;
+  padding-right: 40px;
+}
+/*main1 bitiş*/
+
+/*main2 başlangıç*/
 .main2 {
-  width: 75%;
+  width: 70%;
 }
 
 .main2 h2 {
-  font-family: "h2", sans-serif;
+  font-family: "VAGRoundedBT", sans-serif;
   font-size: 28px;
   color: #06514d;
   margin-bottom: 20px;
@@ -76,12 +108,106 @@ ul {
 .main2 p {
   text-align: center;
   margin-bottom: 25px;
-  font-family: "VAG Primer", sans-serif;
+  font-family: "VAG", sans-serif;
   font-size: 18px;
+  line-height: normal;
+  font-weight: normal;
+}
+/*main2 bitiş*/
+
+/*main3 başlangıç*/
+.row {
+  width: 70%;
 }
 
 .col-6 {
-  width: 40%;
-  height: 300px;
-  border: 2px solid black;
+  height: 350px;
+  margin-bottom: 26px;
 }
+
+.r1,
+.l2 {
+  --bs-gutter-x: 0;
+}
+
+.l1 {
+  background-color: #06514d;
+  color: white;
+}
+
+.r2 {
+  background-color: #d98833;
+  color: white;
+}
+
+.l1 h2 {
+  font-size: 28px;
+  font-family: "VAGRoundedBT", sans-serif;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.r2 h2 {
+  font-size: 28px;
+  font-family: "VAGRoundedBT", sans-serif;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.uretim {
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+}
+
+.alt-cizgi {
+  width: 100px;
+  height: 0px;
+  border: 2px solid white;
+}
+
+.l1,
+.r2 p {
+  line-height: 26px;
+  text-align: justify;
+  font-size: 18px;
+  font-weight: normal;
+  font-family: "Vag", sans-serif;
+}
+/*main3 bitiş*/
+/**/
+.nerdeyiz {
+  text-align: center;
+}
+/**/
+/*main4 başlangıç*/
+.main4 {
+  width: 70%;
+}
+
+.main4 h2 {
+  font-family: "VAGRoundedBT", sans-serif;
+  font-size: 28px;
+  color: #06514d;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.main4 p {
+  text-align: center;
+  margin-bottom: 25px;
+  font-family: "VAG", sans-serif;
+  font-size: 18px;
+  line-height: normal;
+  font-weight: normal;
+}
+
+.main4 p strong {
+  color: #dd8c33;
+  font-weight: 600;
+}
+/*main4 başlangıç*/
+
+/**/
+
+/**/
