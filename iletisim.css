@@ -1,0 +1,74 @@
+@font-face {
+  font-family: kahve-diyari;
+  src: url(./VAGRON.TTF);
+}
+@font-face {
+  font-family: kahve-diyari-thin;
+  src: url(./Monotype\ \ -\ VAG\ Rounded\ Next\ Light.otf);
+}
+.container-header {
+  overflow: hidden;
+  text-align: center;
+  background-color: #06514d;
+}
+.container-header .container {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  position: relative;
+  width: 70%;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.content-breadcrumb {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  left: 15px;
+  top: 30px;
+  text-align: left;
+}
+.content-breadcrumb li a {
+  display: inline-block;
+  color: #ffffff;
+  outline: none !important;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 18px;
+  font-family: "kahve-diyari-thin";
+  list-style: none;
+  text-decoration: none;
+}
+.content-title {
+  margin: 0;
+  color: #ffffff;
+  font-family: "kahve-diyari-thin";
+  font-size: 40px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: normal;
+  font-weight: 400;
+}
+
+.content-title::after {
+  width: 100%;
+  color: #06514d;
+  font-size: 90px;
+  line-height: 90px;
+  font-family: "kahve-diyari";
+  position: absolute;
+  left: 0;
+  top: -50%;
+  z-index: -1;
+  content: attr(data-headline);
+  -webkit-text-stroke: 1px #05423f;
+  -webkit-text-fill-color: #06514d;
+}
